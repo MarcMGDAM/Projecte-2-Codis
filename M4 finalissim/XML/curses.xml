@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE curses SYSTEM "curses.dtd">
+<?xml-stylesheet type="text/xsl" href="curses.xsl"?>
+
+<curses>
+  <cursa>
+    <nom>Natació</nom>
+    <tipus>natació</tipus>
+    <lloc>Tàrrega</lloc>
+    <dia>20/03/2022</dia>
+    <foto>natacio.jpg</foto>
+  </cursa>
+  
+    <cursa>
+    <nom>Carrera</nom>
+    <tipus>correr</tipus>
+    <lloc>Barcelona</lloc>
+    <dia>15/03/2022</dia>
+    <foto>carrera1.png</foto>
+  </cursa>
+  
+    <cursa>
+    <nom>Triatló</nom>
+    <tipus>triatló</tipus>
+    <lloc>Guissona</lloc>
+    <dia>12/04/2022</dia>
+    <foto>trit.png</foto>
+  </cursa>
+  
+    <cursa>
+    <nom>Cycling</nom>
+    <tipus>bici</tipus>
+    <lloc>Valencia</lloc>
+    <dia>30/03/2022</dia>
+    <foto>bici.png</foto>
+  </cursa>
+</curses>

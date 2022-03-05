@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dama</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Lobster&family=Patrick+Hand&display=swap%27');
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">Dama</a>
+            <!-- S'executa l'script d'abaix per a que quan se faci clic al menu s'obri i es pugui tancar-->
+            <div class="Menu" onclick="Menu();"></div>
+            <!-- Menu de navegacio de l'usuari -->
+            <ul class="navegador">
+                <li><a href="nosaltres.html">Qui som?</a></li>
+                <li><a href="contacte.html">Contacte</a></li>
+            </ul> 
+        </header>
+        <!-- Titol del gimnas i descripció -->
+        <div class="content">
+            <div class="contentBx">
+                <p>TORNEM A OBRIR LES NOSTRES INSTAL·LACIONS!
+                <br> POSA'T EN FORMA AMB NOSALTRES!
+                </p>
+                <a href="php/IniciSessio.php">Iniciar Sessió</a>
+            </div>
+        </div>
+        <ul class="sci">
+            <li><a href="https://es-es.facebook.com/"><img src="IMG/facebook.png"></a></li>
+            <li><a href="https://twitter.com/?lang=es"><img src="IMG/twitter.png"></a></li>
+            <li><a href="https://www.instagram.com/?hl=es"><img src="IMG/instagram.png"></a></li>
+        </ul>
+    </section>
+    <!-- Script per quan se estigui en mobil, se pugui obri i tancar el menu desplegable -->
+    <script type="text/javascript">
+        function Menu(){
+            const Menu = document.querySelector('.Menu');
+            const navegador = document.querySelector('.navegador');
+            Menu.classList.toggle('active');
+            navegador.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

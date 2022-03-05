@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    background: linear-gradient(0deg, rgba(66, 66, 66, 0.5), rgba(66, 66, 66, 0.5)), url("IMG/gym.png");
+    background-size: cover;
+
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    font-size: 115px;
+    color: #fff;
+    text-decoration: none;
+    text-decoration: underline white;
+    letter-spacing: 1px;
+    font-family: 'Patrick Hand', cursive;
+
+
+}
+
+header .navegador{
+    font-size: 30px;
+    display: flex;
+}
+
+header .navegador li{
+    list-style: none;
+}
+
+header .navegador li a{
+    display: inline-block;
+    color: #fff;
+    margin-right: 40px;
+    text-decoration: none;
+    font-family: 'Patrick Hand', cursive;
+
+}
+
+header .navegador li a:hover{
+    color: #03a9f4;
+}
+
+section{
+    width: 100%;
+}
+
+main{
+    width: 100%;
+}
+
+
+h2{
+    color: white;
+    font-size: 50px;
+    font-family: 'Patrick Hand', cursive;
+    text-align: center;
+    padding-top: 10%;
+}
