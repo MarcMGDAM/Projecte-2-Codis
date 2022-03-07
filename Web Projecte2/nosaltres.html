@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nosaltres.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Lobster&family=Patrick+Hand&display=swap%27');
+    </style>
+    <title>DAMA</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Dama</a>
+        <!-- S'executa l'script d'abaix per a que quan se faci clic al menu s'obri i es pugui tancar-->
+        <div class="Menu" onclick="Menu();"></div>
+        <!-- Menu de navegacio de l'usuari -->
+        <ul class="navegador">
+            <li><a href="index.html">Torna enrere</a></li>
+        </ul> 
+    </header>
+    <main>
+        <div class="content">
+            <div class="DAMA">
+                <h1>GIMNAS DAMA</h1>
+                <p>Hola, som un gimnàs que torna a obrir les portes per a que us podeu posar en forma ja que per la culpa del Covid-19 vam tenir que tancar durant 1 any.</p>
+            </div>
+            <br>
+            <div class="ofereix">
+                <h1>Que ofereix aquest gimnas?</h1>
+                <p>El gimnas Dama ofereix una gran varietat d'activitats, ja siguin lliures o col·lectives. Com ara:(natació, bici, tennis, boxeig ,entre d'altres...)
+                </p>
+            </div>
+            <br>
+            <div class="iniciar">
+                <h1>Com apuntarse?</h1>
+                <p>Si ja sou socis, us podeu inicia sessió en la nostra pàgina web (la que esteu ara), des de la pàgina principal de la web tindreu un boto de iniciar sessió, 
+                    allà nomes haureu de escriure el vostre usuari i la vostra contrasenya, i si les dades són correctes ja podreu reservar les activitats disponibles que tenim en el nostre gimàns..</p>
+            </div>
+    </div>
+
+
+    </main>
+    <footer>
+        <ul class="sci">
+            <li><a href="https://es-es.facebook.com/"><img src="IMG/facebook.png"></a></li>
+            <li><a href="https://twitter.com/?lang=es"><img src="IMG/twitter.png"></a></li>
+            <li><a href="https://www.instagram.com/?hl=es"><img src="IMG/instagram.png"></a></li>
+        </ul>
+    </footer>
+
+     <!-- Script per quan se estigui en mobil, se pugui obri i tancar el menu desplegable -->
+     <script type="text/javascript">
+        function Menu(){
+            const Menu = document.querySelector('.Menu');
+            const navegador = document.querySelector('.navegador');
+            Menu.classList.toggle('active');
+            navegador.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

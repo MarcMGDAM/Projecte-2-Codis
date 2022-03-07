@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("IMG/gym.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    font-size: 80px;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+header .navegador{
+    font-size: 30px;
+    position: relative;
+    display: flex;
+}
+
+header .navegador li{
+    list-style: none;
+}
+
+header .navegador li a{
+    display: inline-block;
+    color: #fff;
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+header .navegador li a:hover{
+    color: #03a9f4;
+}
+
+
+.activitats{
+    background-color:rgba(97, 97, 97, 0.750);
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+
+.sci{
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+}
+
+.sci li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sci li a{
+    font-size: 30px;
+    position: relative;
+    display: block;
+    margin-right: 30px;
+    /* Per invertir el color de negre(color original) a blanc */
+    filter: invert(1);
+    /* transform: scale(0.5); */
+}
+
+/* Estils per a mobils */
+
+@media (max-width: 991px) {
+    header{
+        padding: 15px 40px;
+    }
+
+    section{
+        padding: 40px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .content .contentBx h2{
+        font-size: 2.5em;       
+    }
+
+    .content .contentBx p{
+        font-size: 1em;   
+    }
+
+    header .navegador{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #000;
+        z-index: 10;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    header .navegador.active{
+        display: flex;
+    }
+
+    header .navegador li a{
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+    .Menu{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: url("IMG/menu.png");
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 11;
+    }
+
+    .Menu.active{
+        background: url("IMG/tancar.png");
+        background-position: center;
+        background-size: 25px;
+        background-repeat: no-repeat;
+
+    }
+    
+}

@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    width: 100%;
+    background: linear-gradient(0deg, rgba(66, 66, 66, 0.8), rgba(66, 66, 66, 0.8)), url("IMG/gym.png");
+    background-size: cover;
+}
+
+
+body::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(66, 66, 66, 0.8);
+
+
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    font-size: 115px;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    text-decoration: underline white;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header .navegador{
+    font-size: 30px;
+    position: relative;
+    display: flex;
+}
+
+header .navegador li{
+    list-style: none;
+}
+
+header .navegador li a{
+    display: inline-block;
+    font-size: 40px;
+    color: #fff;
+    margin-right: 50px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header .navegador li a:hover{
+    color: #03a9f4;
+}
+
+
+.content{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 25%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+   }
+
+
+   h1{
+       font-size: 50px;
+   }
+
+   p{
+    font-size: 30px;
+
+   }
+
+
+.sci{
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+}
+
+.sci li{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sci li a{
+    width: 50px;
+    font-size: 30px;
+    margin-left: 50px;
+    /* Per invertir el color de negre(color original) a blanc */
+    filter: invert(1);
+    /* transform: scale(0.5); */
+}

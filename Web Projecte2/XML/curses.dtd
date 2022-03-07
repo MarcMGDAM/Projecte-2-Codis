@@ -1,0 +1,7 @@
+<!ELEMENT curses (cursa+)>
+<!ELEMENT cursa (nom,tipus,lloc,dia,foto)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT tipus (#PCDATA)>
+<!ELEMENT lloc (#PCDATA)>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT foto (#PCDATA)>

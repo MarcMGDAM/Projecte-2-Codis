@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    width: 100%;
+    background: linear-gradient(0deg, rgba(66, 66, 66, 0.8), rgba(66, 66, 66, 0.8)), url("IMG/gym.png");
+    background-size: cover;
+}
+
+
+body::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(66, 66, 66, 0.8);
+
+
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    font-size: 115px;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    text-decoration: underline white;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header .navegador{
+    font-size: 30px;
+    position: relative;
+    display: flex;
+}
+
+header .navegador li{
+    list-style: none;
+}
+
+header .navegador li a{
+    display: inline-block;
+    font-size: 40px;
+    color: #fff;
+    margin-right: 50px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header .navegador li a:hover{
+    color: #03a9f4;
+}
+
+.content .contentBx{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.content .contentBx p{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin: 20px 0;
+    position: absolute;
+    top: 35%;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+
+.content .contentBx a{
+    padding: 10px 30px;
+    background: #7a7a7a;
+    color: #fff;
+    text-decoration: none;
+    font-size: 35px;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 60%;
+    left: 41.5%;
+    border-radius: 15px;
+    border: 3px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sci{
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+}
+
+.sci li{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sci li a{
+    width: 50px;
+    font-size: 30px;
+    margin-left: 50px;
+    /* Per invertir el color de negre(color original) a blanc */
+    filter: invert(1);
+    /* transform: scale(0.5); */
+}
+
+/* Estils per a mobils */
+
+@media (max-width: 768px) {
+
+    body{
+       background-size: 200%;
+    }
+    header{
+        padding: 15px 40px;
+    }
+
+    section{
+        padding: 40px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    header .Menu{
+        position: fixed;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        /* left: 450px; */
+        right: 0;
+    }
+
+    .Menu{
+        width: 30px;
+        height: 30px;
+        margin-right: 30px;
+        background: url("IMG/menu.png");
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .Menu.active{
+        background: url("IMG/tancar.png");
+        background-position: center;
+        background-size: 25px;
+        background-repeat: no-repeat;
+
+    }
+
+
+
+    header .navegador{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #000;
+        z-index: 1;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 100px 0;
+    }
+
+    header .navegador.active{
+        display: flex;
+    }
+
+    header .navegador li a{
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+
+    .content .contentBx{
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .content .contentBx h2{
+        font-size: 2.5em;       
+    }
+
+    .content .contentBx p{
+        font-size: 30px;
+       }
+
+    .content .contentBx a{
+        font-size: 20px;
+       
+      }
+
+    
+    
+}
