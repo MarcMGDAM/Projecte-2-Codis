@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url("IMG/gym.png");
+    background-size: cover;
+
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(66, 66, 66, 0.8);
+
+}
+
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .curses{
+    font-size: 70px;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    text-decoration: underline white;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header .navegador{
+    font-size: 30px;
+    position: relative;
+    display: flex;
+}
+
+header .navegador li{
+    list-style: none;
+}
+
+header .navegador li a{
+    display: inline-block;
+    font-size: 40px;
+    color: #fff;
+    margin-right: 50px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header .navegador li a:hover{
+    color: #03a9f4;
+}
+
+
+.cursa img{
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cursa{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#carrera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    /* margin: 20px 0; */
+    position: relative;
+    /* top: 30%;
+    left: 50px; */
+}
+
+h4 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#boto{
+    font-size: 20px;
+    width: 120px;
+    padding: 10px;
+    border-radius: 10px;
+    /* margin-left: 170px; */
+}
